@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS</title>
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="images/favicon-32x32.png" type="image/png">
+</head>
+<body>
+    <header class="bg-bg p-4 sticky top-0 flex justify-between z-20 ">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" id="logo" class="flex-shrink-0">
+                <h1 class="ml-5 text-center text-white text-3xl font-bold">Bootslander</h1>
+            </a>
+
+            <button class="block lg:hidden p-2" type="button" id="menuButton">
+                <a href="#" class="custom-toggler-icon">
+                    <i class="bi bi-list text-white text-2xl"></i>
+                </a>
+            </button>
+
+            <div class="hidden lg:flex flex-grow justify-end items-center mr-5" id="navbarSupportedContent">
+                <ul class="flex space-x-4">
+                    <li class="nav-item"><a class=" p-3 text-base text-gray-300 hover:text-white"
+                            href="#home">Home</a></li>
+                    <li class="nav-item"><a class=" p-3 text-base text-gray-300 hover:text-white"
+                            href="#about">About</a></li>
+                    <li class="nav-item"><a class=" p-3 text-base text-gray-300 hover:text-white"
+                            href="#features">Features</a></li>
+                    <li class="nav-item"><a class=" p-3 text-base text-gray-300 hover:text-white"
+                            href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class=" p-3 text-base text-gray-300 hover:text-white"
+                            href="#team">Team</a></li>
+                    <li class="nav-item"><a class=" p-3 text-base text-gray-300 hover:text-white"
+                            href="#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class=" p-3 text-base text-gray-300 hover:text-white"
+                            href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="lg:hidden absolute top-full right-0 w-full bg-bg shadow-lg hidden" id="dropdownMenu">
+            <ul class="space-y-2 py-4 px-6">
+                <li><a class="text-white text-lg hover:text-hover" href="#home">Home</a></li>
+                <li><a class="text-white text-lg hover:text-hover" href="#about">About</a></li>
+                <li><a class="text-white text-lg hover:text-hover" href="#features">Features</a></li>
+                <li><a class="text-white text-lg hover:text-hover" href="#gallery">Gallery</a></li>
+                <li><a class="text-white text-lg hover:text-hover" href="#team">Team</a></li>
+                <li><a class="text-white text-lg hover:text-hover" href="#pricing">Pricing</a></li>
+                <li><a class="text-white text-lg hover:text-hover" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <section
+        class="home bg-bg flex flex-col lg:flex-row justify-center items-center overflow-x-hidden overflow-y-hidden"
+        id="home">
+        <div class="text-area text-left lg:text-left w-full lg:w-5/12 md:w-8/12 px-4">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl text-gray-300 font-bold mb-4">
+                Build Your Landing <br> Page with <span class="text-white border-b-4 border-primary">Bootslander.</span>
+            </h1>
+            <p class="text-gray-300 text-lg md:text-xl mb-6">
+                We are a team of talented designers making <br> websites with Bootstrap.
+            </p>
+            <div class="flex items-center justify-center lg:justify-start space-x-4">
+                <div class="btn bg-primary text-white py-2 px-4 rounded-lg cursor-pointer hover:bg-hover">
+                    Get Started
+                </div>
+                <div class="icon flex items-center justify-center text-primary">
+                    <i class="bi bi-play-circle text-2xl"></i>
+                    <p class="mb-0 ml-2 text-white font-semibold text-lg hover:text-primary">Watch Video</p>
+                </div>
+            </div>
+        </div>
+        <div class="lg:w-5/12 md:w-8/12 w-[60%] flex justify-center pt-12 pb-12 home-animation ">
+            <img id="home-img" src="images/hero-img.png" alt="Hero Image" class="max-w-full h-auto lg:h-[500px]">
+        </div>
+    </section>
+    <section class="about   flex flex-col lg:flex-row justify-center items-center mt-20 mb-20 overflow-x-hidden"
+        id="about">
+
+        <div class="lg:w-1/3 md:w-5/6 w-full flex justify-end flex-col ml-4 lg:ml-24 px-4 fade-up ">
+            <div class="mb-3 text-primary w-[100px] bg-blue-50 text-center rounded-lg py-2">About Us</div>
+            <h2 class="text-3xl lg:text-4xl text-bg font-bold mt-4 mb-4">Ducimus rerum libero reprehenderit cumque</h2>
+            <p class="text-gray-600 text-lg mb-4">Ipsa sint sit. Quis ducimus tempore dolores impedit et dolor cumque
+                alias maxime. Enim reiciendis minus et rerum hic non. Dicta quas cum quia maiores iure. Quidem nulla qui
+                assumenda incidunt voluptatem tempora deleniti soluta.</p>
+            <div
+                class="btn2 mt-6 mb-4 bg-primary w-[120px] text-center hover:bg-hover text-white py-2 px-4 rounded-lg cursor-pointer">
+                Read More
+            </div>
+        </div>
+
+
+        <div class="lg:w-2/3 md:w-5/6 w-full card-area px-4 overflow-y-hidden">
+            <div class="card-container flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-6">
+
+                <div class="flex flex-col space-y-4 w-full md:w-[40%] md:mt-10">
+                    <div class="shadow-xl rounded-lg p-6 bg-white w-full border border-gray-200 card-animate">
+                        <div
+                            class="icon text-3xl text-center mb-2 bg-blue-50 w-[60px] py-3 hover:bg-primary hover:text-white rounded-full text-primary">
+                            <i class="bi bi-buildings"></i>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2 text-bg">Eius provident</h4>
+                        <p class="text-gray-600">Magni repellendus vel ullam hic officia accusantium ipsa dolor omnis
+                            dolor voluptatem.</p>
+                    </div>
+                    <div class="shadow-xl rounded-lg p-6 bg-white w-full border border-gray-200 card-animate">
+                        <div
+                            class="icon text-3xl text-center mb-2 bg-blue-50 w-[60px] py-3 hover:bg-primary hover:text-white rounded-full text-primary">
+                            <i class="bi bi-buildings"></i>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2 text-bg">Eius provident</h4>
+                        <p class="text-gray-600">Magni repellendus vel ullam hic officia accusantium ipsa dolor omnis
+                            dolor voluptatem.</p>
+                    </div>
+                </div>
+
+
+                <div class="flex flex-col space-y-4 w-full md:w-[40%]">
+                    <div class="shadow-xl rounded-lg p-6 bg-white w-full border border-gray-200 card-animate">
+                        <div
+                            class="icon text-3xl text-center mb-2 bg-blue-50 w-[60px] py-3 hover:bg-primary hover:text-white rounded-full text-primary">
+                            <i class="bi bi-buildings"></i>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2 text-bg">Eius provident</h4>
+                        <p class="text-gray-600">Magni repellendus vel ullam hic officia accusantium ipsa dolor omnis
+                            dolor voluptatem.</p>
+                    </div>
+                    <div class="shadow-xl rounded-lg p-6 bg-white w-full border border-gray-200 card-animate">
+                        <div
+                            class="icon text-3xl text-center mb-2 bg-blue-50 w-[60px] py-3 hover:bg-primary hover:text-white rounded-full text-primary">
+                            <i class="bi bi-buildings"></i>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2 text-bg">Eius provident</h4>
+                        <p class="text-gray-600">Magni repellendus vel ullam hic officia accusantium ipsa dolor omnis
+                            dolor voluptatem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features flex flex-col lg:flex-row justify-center items-center mt-20 mb-20 overflow-x-hidden"
+        id="features">
+        <div class="container flex justify-center overflow-y-hidden">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 xl:gap-x-16 gap-y-6 ">
+                <div
+                    class="features-item flex flex-row items-center border border-gray-200 w-[220px]  px-4 py-2 hover:border-hover group features-animation">
+                    <i class="bi bi-eye text-yellow-400 text-4xl mr-3"></i> <span
+                        class="text-lg text-bg font-semibold group-hover:text-hover">Lorem ipsum</span>
+                </div>
+                <div
+                    class="features-item flex flex-row items-center border border-gray-200 w-[220px] px-4 py-2 hover:border-hover group features-animation">
+                    <i class="bi bi-infinity text-blue-500 text-4xl mr-3"></i> <span
+                        class="text-lg text-bg font-semibold group-hover:text-hover">Lorem ipsum</span>
+                </div>
+                <div
+                    class="features-item flex flex-row items-center border border-gray-200 w-[220px] px-4 py-2 hover:border-hover group features-animation">
+                    <i class="bi bi-mortarboard text-pink-600 text-4xl mr-3"></i> <span
+                        class="text-lg text-bg font-semibold group-hover:text-hover">Lorem ipsum</span>
+                </div>
+                <div
+                    class="features-item flex flex-row items-center border border-gray-200 w-[220px] px-4 py-2 hover:border-hover group features-animation">
+                    <i class="bi bi-nut text-purple-500 text-4xl mr-3"></i> <span
+                        class="text-lg text-bg font-semibold group-hover:text-hover">Lorem ipsum</span>
+                </div>
+                <div
+                    class="features-item flex flex-row items-center border border-gray-200 w-[220px] px-4 py-2 hover:border-hover group features-animation">
+                    <i class="bi bi-shuffle text-blue-400 text-4xl mr-3"></i> <span
+                        class="text-lg text-bg font-semibold group-hover:text-hover">Lorem ipsum</span>
+                </div>
+                <div
+                    class="features-item flex flex-row items-center border border-gray-200 w-[220px] px-4 py-2 hover:border-hover group features-animation">
+                    <i class="bi bi-star text-orange-400 text-4xl mr-3"></i> <span
+                        class="text-lg text-bg font-semibold group-hover:text-hover">Lorem ipsum</span>
+                </div>
+                <div
+                    class="features-item flex flex-row items-center border border-gray-200 w-[220px] px-4 py-2 hover:border-hover group features-animation">
+                    <i class="bi bi-x-diamond text-teal-400 text-4xl mr-3"></i> <span
+                        class="text-lg text-bg font-semibold group-hover:text-hover">Lorem ipsum</span>
+                </div>
+                <div
+                    class="features-item flex flex-row items-center border border-gray-200 w-[220px] px-4 py-2 hover:border-hover group features-animation">
+                    <i class="bi bi-camera-video text-indigo-500 text-4xl mr-3"></i> <span
+                        class="text-lg text-bg font-semibold group-hover:text-hover">Lorem ipsum</span>
+                </div>
+                <div
+                    class="features-item flex flex-row items-center border border-gray-200 w-[220px] px-4 py-2 hover:border-hover group features-animation">
+                    <i class="bi bi-command text-brown-500 text-4xl mr-3"></i> <span
+                        class="text-lg text-bg font-semibold group-hover:text-hover">Lorem ipsum</span>
+                </div>
+                <div
+                    class="features-item flex flex-row items-center border border-gray-200 w-[220px] px-4 py-2 hover:border-hover group features-animation">
+                    <i class="bi bi-dribbble text-pink-700 text-4xl mr-3"></i> <span
+                        class="text-lg text-bg font-semibold group-hover:text-hover">Lorem ipsum</span>
+                </div>
+                <div
+                    class="features-item flex flex-row items-center border border-gray-200 w-[220px] px-4 py-2 hover:border-hover group features-animation">
+                    <i class="bi bi-activity text-orange-600 text-4xl mr-3"></i> <span
+                        class="text-lg text-bg font-semibold group-hover:text-hover">Lorem ipsum</span>
+                </div>
+                <div
+                    class="features-item flex flex-row items-center border border-gray-200 w-[220px] px-4 py-2 hover:border-hover group features-animation">
+                    <i class="bi bi-brightness-high text-green-600 text-4xl mr-3"></i> <span
+                        class="text-lg text-bg font-semibold group-hover:text-hover">Lorem ipsum</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="stats" class="stats py-10 bg-gray-100 overflow-x-hidden">
+        <div class="flex flex-wrap justify-center gap-8">
+
+            <div class="lg:w-1/5 md:w-1/2 flex flex-col items-center mb-8 stats-animation">
+                <i
+                    class="bi bi-emoji-smile shadow-md text-2xl w-[60px] text-primary bg-white text-center rounded-full py-3 px-2 -mb-7 z-10"></i>
+                <div class="stats-item shadow-md rounded-md p-4 pt-10 bg-white text-center w-[220px]">
+                    <span class="text-3xl font-bold text-gray-500">113</span>
+                    <p class="text-gray-600">Happy Clients</p>
+                </div>
+            </div>
+
+
+            <div class="lg:w-1/5 md:w-1/2 flex flex-col items-center mb-8 stats-animation">
+                <i
+                    class="bi bi-journal-richtext shadow-md text-2xl w-[60px] text-primary bg-white text-center rounded-full py-3 px-2 -mb-7 z-10"></i>
+                <div class="stats-item shadow-md rounded-md p-4 pt-10 bg-white text-center w-[220px]">
+                    <span class="text-3xl font-bold text-gray-500">127</span>
+                    <p class="text-gray-600">Projects</p>
+                </div>
+            </div>
+
+
+            <div class="lg:w-1/5 md:w-1/2 flex flex-col items-center mb-8 stats-animation">
+                <i
+                    class="bi bi-headset shadow-md text-2xl w-[60px] text-primary bg-white text-center rounded-full py-3 px-2 -mb-7 z-10"></i>
+                <div class="stats-item shadow-md rounded-md p-4 pt-10 bg-white text-center w-[220px]">
+                    <span class="text-3xl font-bold text-gray-500">215</span>
+                    <p class="text-gray-600">Hours Of Support</p>
+                </div>
+            </div>
+
+
+            <div class="lg:w-1/5 md:w-1/2 flex flex-col items-center mb-8 stats-animation">
+                <i
+                    class="bi bi-people shadow-md text-2xl w-[60px] text-primary bg-white text-center rounded-full py-3 px-2 -mb-7 z-10"></i>
+                <div class="stats-item shadow-md rounded-md p-4 pt-10 bg-white text-center w-[220px]">
+                    <span class="text-3xl font-bold text-gray-500">234</span>
+                    <p class="text-gray-600">Hard Workers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="details" class="details section mt-20 mb-20 overflow-x-hidden px-10 ">
+        <div class="container mx-auto sm:ml-16 mb-12">
+            <h2 class="text-2xl text-gray-500 mb-2">Details</h2>
+            <div class="text-3xl font-semibold text-bg"> Check Our Details </div>
+        </div>
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-1 gap-12 overflow-y-hidden ">
+                <div class="flex flex-col md:flex-row items-center justify-center features-item card-animate">
+                    <div class="md:w-2/5 flex justify-center"> <img src="images/details-1.png" alt="">
+                    </div>
+                    <div class="md:w-1/2 mt-4 md:mt-0 md:ml-8">
+                        <h3 class="text-2xl font-semibold">Voluptatem dignissimos provident quasi corporis voluptates
+                            sit assumenda.</h3>
+                        <p class="italic mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <ul class="mt-4 space-y-2">
+                            <li class="flex items-center"><i class="bi bi-check text-primary mr-2"></i><span>Ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                            <li class="flex items-center"><i class="bi bi-check text-primary mr-2"></i><span>Duis aute
+                                    irure dolor in reprehenderit in voluptate velit.</span></li>
+                            <li class="flex items-center"><i class="bi bi-check text-primary mr-2"></i><span>Ullam est
+                                    qui quos consequatur eos accusamus.</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-center justify-center features-item card-animate">
+
+                    <div class="md:w-1/2 mt-4 ">
+                        <h3 class="text-2xl font-semibold">Corporis temporibus maiores provident</h3>
+                        <p class="italic mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="mt-4">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum.</p>
+                    </div>
+                    <div class="md:w-2/5 w- flex justify-center"> <img src="images/details-2.png" alt="">
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-center justify-center features-item card-animate">
+                    <div class="md:w-2/6 flex justify-center "> <img src="images/details-3.png" class="hidden md:block"
+                            alt="">
+                    </div>
+                    <div class="md:w-1/2 mt-4 md:mt-0 md:ml-8">
+                        <h3 class="text-2xl font-semibold">Sunt consequatur ad ut est nulla consectetur reiciendis animi
+                            voluptas</h3>
+                        <p class="mt-4">Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima
+                            quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
+                        <ul class="mt-4 space-y-2">
+                            <li class="flex items-center"><i class="bi bi-check text-primary mr-2"></i><span>Ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                            <li class="flex items-center"><i class="bi bi-check text-primary mr-2"></i><span>Duis aute
+                                    irure dolor in reprehenderit in voluptate velit.</span></li>
+                            <li class="flex items-center"><i class="bi bi-check text-primary mr-2"></i><span>Facilis ut
+                                    et voluptatem aperiam. Autem soluta ad fugiat</span>.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-center justify-around features-item card-animate">
+
+                    <div class="md:w-1/2 mt-4 md:mt-0 md:mr-8">
+                        <h3 class="text-2xl font-semibold">Quas et necessitatibus eaque impedit ipsum animi consequatur
+                            incidunt in</h3>
+                        <p class="italic mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="mt-4">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum.</p>
+                    </div>
+                    <div class="md:w-2/6 flex justify-center pt-5"> <img src="images/details-4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="gallery section mt-20 mb-20 overflow-x-hidden ">
+        <div class="container mx-auto sm:ml-16 mb-12 px-10">
+            <h2 class="text-2xl text-gray-500 mb-2">Gallery</h2>
+            <div class="text-3xl font-semibold text-bg">Check Our Gallery </div>
+        </div>
+        <div class="container mx-auto px-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1">
+                <div class="gallery-item transition-transform duration-300 ease-in-out hover:scale-95"> <a href="assets/img/gallery/gallery-1.jpg" data-gallery="images-gallery">
+                        <img src="images/gallery-1.png" alt=""> </a>
+                </div>
+                <div class="gallery-item transition-transform duration-300 ease-in-out hover:scale-95"> <a href="assets/img/gallery/gallery-2.jpg" data-gallery="images-gallery">
+                        <img src="images/gallery-2.png" alt=""> </a>
+                </div>
+                <div class="gallery-item transition-transform duration-300 ease-in-out hover:scale-95"> <a href="assets/img/gallery/gallery-3.jpg" data-gallery="images-gallery">
+                        <img src="images/gallery-3.png" alt=""> </a>
+                </div>
+                <div class="gallery-item transition-transform duration-300 ease-in-out hover:scale-95"> <a href="assets/img/gallery/gallery-4.jpg" data-gallery="images-gallery">
+                        <img src="images/gallery-4.png" alt=""> </a>
+                </div>
+                <div class="gallery-item transition-transform duration-300 ease-in-out hover:scale-95"> <a href="assets/img/gallery/gallery-5.jpg" data-gallery="images-gallery">
+                        <img src="images/gallery-5.png" alt=""> </a>
+                </div>
+                <div class="gallery-item transition-transform duration-300 ease-in-out hover:scale-95"> <a href="assets/img/gallery/gallery-6.jpg" data-gallery="images-gallery">
+                        <img src="images/gallery-6.png" alt=""> </a>
+                </div>
+                <div class="gallery-item transition-transform duration-300 ease-in-out hover:scale-95"> <a href="assets/img/gallery/gallery-7.jpg" data-gallery="images-gallery">
+                        <img src="images/gallery-7.png" alt=""> </a>
+                </div>
+                <div class="gallery-item transition-transform duration-300 ease-in-out hover:scale-95"> <a href="assets/img/gallery/gallery-8.jpg" data-gallery="images-gallery">
+                        <img src="images/gallery-8.png" alt=""> </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials" class="testimonials pt-10 bg-gray-100 relative overflow-hidden">
+        <img src="images/testimonials-bg.png" alt="Background"
+            class="absolute inset-0 w-full h-full object-cover opacity-80">
+        <div class="swiper-container relative">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide flex justify-center">
+                    <div class="testimonial-item py-10 px-6  text-center">
+                        <img src="images/testimonials-4.png" alt="John Larson"
+                            class="testimonial-img w-24 h-24 mx-auto rounded-full mb-4">
+                        <h3 class="text-xl font-semibold text-white">John Larson</h3>
+                        <h4 class="text-sm text-white">Entrepreneur</h4>
+                        <div class="stars mt-2 mb-4">
+                            <i class="bi bi-star-fill text-yellow-500"></i>
+                            <i class="bi bi-star-fill text-yellow-500"></i>
+                            <i class="bi bi-star-fill text-yellow-500"></i>
+                            <i class="bi bi-star-fill text-yellow-500"></i>
+                            <i class="bi bi-star-fill text-white"></i>
+                        </div>
+                        <p class="text-sm text-white">
+                            <i class="bi bi-quote quote-icon-left text-white"></i>
+                            <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
+                                veniam enim culpa labore.</span>
+                            <i class="bi bi-quote quote-icon-right text-white"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide flex justify-center">
+                    <div class="testimonial-item py-10 px-6  text-center">
+                        <img src="images/testimonials-4.png" alt="John Larson"
+                            class="testimonial-img w-24 h-24 mx-auto rounded-full mb-4">
+                        <h3 class="text-xl font-semibold text-white">John Larson</h3>
+                        <h4 class="text-sm text-white">Entrepreneur</h4>
+                        <div class="stars mt-2 mb-4">
+                            <i class="bi bi-star-fill text-yellow-500"></i>
+                            <i class="bi bi-star-fill text-yellow-500"></i>
+                            <i class="bi bi-star-fill text-yellow-500"></i>
+                            <i class="bi bi-star-fill text-yellow-500"></i>
+                            <i class="bi bi-star-fill text-white"></i>
+                        </div>
+                        <p class="text-sm text-white">
+                            <i class="bi bi-quote quote-icon-left text-white"></i>
+                            <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
+                                veniam enim culpa labore.</span>
+                            <i class="bi bi-quote quote-icon-right text-white"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide flex justify-center">
+                    <div class="testimonial-item py-10 px-6  text-center">
+                        <img src="images/testimonials-4.png" alt="John Larson"
+                            class="testimonial-img w-24 h-24 mx-auto rounded-full mb-4">
+                        <h3 class="text-xl font-semibold text-white">John Larson</h3>
+                        <h4 class="text-sm text-white">Entrepreneur</h4>
+                        <div class="stars mt-2 mb-4">
+                            <i class="bi bi-star-fill text-yellow-500"></i>
+                            <i class="bi bi-star-fill text-yellow-500"></i>
+                            <i class="bi bi-star-fill text-yellow-500"></i>
+                            <i class="bi bi-star-fill text-yellow-500"></i>
+                            <i class="bi bi-star-fill text-white"></i>
+                        </div>
+                        <p class="text-sm text-white">
+                            <i class="bi bi-quote quote-icon-left text-white"></i>
+                            <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
+                                veniam enim culpa labore.</span>
+                            <i class="bi bi-quote quote-icon-right text-white"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide flex justify-center">
+                    <div class="testimonial-item py-10 px-6  text-center">
+                        <img src="images/testimonials-4.png" alt="John Larson"
+                            class="testimonial-img w-24 h-24 mx-auto rounded-full mb-4">
+                        <h3 class="text-xl font-semibold text-white">John Larson</h3>
+                        <h4 class="text-sm text-white">Entrepreneur</h4>
+                        <div class="stars mt-2 mb-4">
+                            <i class="bi bi-star-fill text-yellow-500"></i>
+                            <i class="bi bi-star-fill text-yellow-500"></i>
+                            <i class="bi bi-star-fill text-yellow-500"></i>
+                            <i class="bi bi-star-fill text-yellow-500"></i>
+                            <i class="bi bi-star-fill text-white"></i>
+                        </div>
+                        <p class="text-sm text-white">
+                            <i class="bi bi-quote quote-icon-left text-white"></i>
+                            <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
+                                veniam enim culpa labore.</span>
+                            <i class="bi bi-quote quote-icon-right text-white"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide flex justify-center">
+                    <div class="testimonial-item py-10 px-6  text-center">
+                        <img src="images/testimonials-4.png" alt="John Larson"
+                            class="testimonial-img w-24 h-24 mx-auto rounded-full mb-4">
+                        <h3 class="text-xl font-semibold text-white">John Larson</h3>
+                        <h4 class="text-sm text-white">Entrepreneur</h4>
+                        <div class="stars mt-2 mb-4">
+                            <i class="bi bi-star-fill text-yellow-500"></i>
+                            <i class="bi bi-star-fill text-yellow-500"></i>
+                            <i class="bi bi-star-fill text-yellow-500"></i>
+                            <i class="bi bi-star-fill text-yellow-500"></i>
+                            <i class="bi bi-star-fill text-white"></i>
+                        </div>
+                        <p class="text-sm text-white pb-8">
+                            <i class="bi bi-quote quote-icon-left text-white"></i>
+                            <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
+                                veniam enim culpa labore.</span>
+                            <i class="bi bi-quote quote-icon-right text-white"></i>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination" style="--swiper-pagination-color: #fff8f8;"></div>
+        </div>
+    </section>
+    <section id="team" class="team-section mb-5 my-12 overflow-x-hidden " itemid="team">
+
+        <div class="container mx-auto sm:ml-16 mb-8 pl-6 sm:pl-0">
+            <h2 class="text-2xl text-gray-500 mb-2">Team</h2>
+            <div class="text-3xl font-semibold text-bg">Check Our Team</div>
+        </div>
+
+
+        <div class="container mx-auto px-4 overflow-y-hidden">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="member relative card-animate">
+                    <div class="pic overflow-hidden rounded-lg">
+                        <img src="images/team-1.png" alt="Walter White"
+                            class="w-full h-auto object-cover rounded-lg shadow-md">
+                    </div>
+                    <div class="member-info bg-white shadow-lg p-6 rounded-lg -mt-8 mx-4 relative">
+                        <h4 class="text-xl font-semibold text-gray-800">Walter White</h4>
+                        <hr class="my-2">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600 text-sm">Chief Executive Officer</span>
+                            <div class="social flex space-x-3">
+                                <a href="#" class="text-blue-400 hover:text-blue-600"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="text-pink-500 hover:text-pink-700"><i
+                                        class="bi bi-instagram"></i></a>
+                                <a href="#" class="text-blue-700 hover:text-blue-900"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="member relative card-animate">
+                    <div class="pic overflow-hidden rounded-lg">
+                        <img src="images/team-2.png" alt="Sarah Jhonson"
+                            class="w-full h-auto object-cover rounded-lg shadow-md">
+                    </div>
+                    <div class="member-info bg-white shadow-lg p-6 rounded-lg -mt-8 mx-4 relative">
+                        <h4 class="text-xl font-semibold text-gray-800">Sarah Jhonson</h4>
+                        <hr class="my-2">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600 text-sm">Product Manager</span>
+                            <div class="social flex space-x-3">
+                                <a href="#" class="text-blue-400 hover:text-blue-600"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="text-pink-500 hover:text-pink-700"><i
+                                        class="bi bi-instagram"></i></a>
+                                <a href="#" class="text-blue-700 hover:text-blue-900"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="member relative card-animate">
+                    <div class="pic overflow-hidden rounded-lg">
+                        <img src="images/team-3.png" alt="William Anderson"
+                            class="w-full h-auto object-cover rounded-lg shadow-md">
+                    </div>
+                    <div class="member-info bg-white shadow-lg p-6 rounded-lg -mt-8 mx-4 relative">
+                        <h4 class="text-xl font-semibold text-gray-800">William Anderson</h4>
+                        <hr class="my-2">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600 text-sm">CTO</span>
+                            <div class="social flex space-x-3">
+                                <a href="#" class="text-blue-400 hover:text-blue-600"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="text-pink-500 hover:text-pink-700"><i
+                                        class="bi bi-instagram"></i></a>
+                                <a href="#" class="text-blue-700 hover:text-blue-900"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="pricing" class="pricing-section  my-10 overflow-x-hidden ">
+
+        <div class="container mx-auto sm:ml-16 mb-8 pl-6 sm:pl-0">
+            <h2 class="text-2xl text-gray-500 mb-2">Pricing</h2>
+            <div class="text-3xl font-semibold text-bg">
+                <span>Check Our Pricing</span>
+            </div>
+        </div>
+
+
+        <div class="container mx-auto px-4 overflow-y-hidden">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+                <div class="pricing-item bg-blue-50 shadow-lg rounded-lg p-6 card-animate">
+                    <h3 class="text-2xl font-semibold text-bg mb-4">Free Plan</h3>
+                    <p class="text-gray-600 text-sm mb-6">
+                        Ullam mollitia quasi nobis soluta in voluptatum et sint palora dex strater
+                    </p>
+                    <h4 class="text-4xl font-bold text-gray-800 mb-6">
+                        <span class="text-primary">$0</span><span class="text-base text-gray-600 font-medium">/
+                            month</span>
+                    </h4>
+                    <button
+                        class=" text-gray-600 border border-gray-400 py-2 px-4 w-full rounded-md hover:bg-primary hover:text-white hover:border-primary  mb-4">
+                        Start a free trial
+                    </button>
+                    <p class="text-sm text-gray-500 text-center mb-4">No credit card required</p>
+                    <ul class="space-y-2 ">
+                        <li class="flex items-center"><i class="bi bi-check text-green-500"></i> <span class="ml-2">Quam
+                                adipiscing vitae proin</span></li>
+                        <li class="flex items-center"><i class="bi bi-check text-green-500"></i> <span class="ml-2">Nec
+                                feugiat nisl pretium</span></li>
+                        <li class="flex items-center"><i class="bi bi-check text-green-500"></i> <span
+                                class="ml-2">Nulla at volutpat diam uteera</span></li>
+                        <li class="flex items-center text-gray-400 line-through"><i class="bi bi-x"></i> <span
+                                class="ml-2">Pharetra massa massa ultricies</span></li>
+                        <li class="flex items-center text-gray-400 line-through"><i class="bi bi-x"></i> <span
+                                class="ml-2">Massa ultricies mi quis hendrerit</span></li>
+                        <li class="flex items-center text-gray-400 line-through"><i class="bi bi-x"></i> <span
+                                class="ml-2">Voluptate id voluptas qui sed aperiam rerum</span></li>
+                        <li class="flex items-center text-gray-400 line-through"><i class="bi bi-x"></i> <span
+                                class="ml-2">Iure nihil dolores recusandae odit </span></li>
+                    </ul>
+                </div>
+
+
+                <div class="pricing-item bg-blue-50 shadow-lg rounded-lg p-6 card-animate">
+                    <h3 class="text-2xl font-semibold text-bg mb-4">Business Plan</h3>
+                    <p class="text-gray-600 text-sm mb-6">
+                        Ullam mollitia quasi nobis soluta in voluptatum et sint palora dex strater
+                    </p>
+                    <h4 class="text-4xl font-bold mb-6 text-gray-800">
+                        <span class="text-primary">$29</span><span class="text-base font-medium text-gray-600">/
+                            month</span>
+                    </h4>
+                    <button class=" w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-hover mb-4">
+                        Start a free trial
+                    </button>
+                    <p class="text-sm text-gray-500 text-center mb-4">No credit card required</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i class="bi bi-check text-green-500"></i> <span class="ml-2">Quam
+                                adipiscing vitae proin</span></li>
+                        <li class="flex items-center"><i class="bi bi-check text-green-500"></i> <span class="ml-2">Nec
+                                feugiat nisl pretium</span></li>
+                        <li class="flex items-center"><i class="bi bi-check text-green-500"></i> <span
+                                class="ml-2">Nulla at volutpat diam uteera</span></li>
+                        <li class="flex items-center"><i class="bi bi-check text-green-500"></i> <span
+                                class="ml-2">Pharetra massa massa ultricies</span></li>
+                        <li class="flex items-center"><i class="bi bi-check text-green-500"></i> <span
+                                class="ml-2">Massa ultricies mi quis hendrerit</span></li>
+                        <li class="flex items-center"><i class="bi bi-check text-green-500"></i> <span
+                                class="ml-2">Voluptate id voluptas qui sed aperiam rerum</span></li>
+                        <li class="flex items-center text-gray-400 line-through"><i class="bi bi-x"></i> <span
+                                class="ml-2">Iure nihil dolores recusandae odit </span></li>
+                    </ul>
+                </div>
+
+
+                <div class="pricing-item bg-blue-50 shadow-lg rounded-lg p-6 relative card-animate">
+                    <h3 class="text-2xl font-semibold text-bg mb-4">Developer Plan</h3>
+                    <p class="text-gray-600 text-sm mb-6">
+                        Ullam mollitia quasi nobis soluta in voluptatum et sint palora dex strater
+                    </p>
+                    <h4 class="text-4xl font-bold text-gray-800 mb-6">
+                        <span class="text-primary">$49</span><span class="text-base font-medium text-gray-600">/
+                            month</span>
+                    </h4>
+                    <button
+                        class="text-gray-600 border border-gray-400 py-2 px-4 w-full rounded-md hover:bg-primary hover:text-white hover:border-primary  mb-4">
+                        Start a free trial
+                    </button>
+                    <p class="text-sm text-gray-500 text-center mb-4">No credit card required</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i class="bi bi-check text-green-500"></i> <span class="ml-2">Quam
+                                adipiscing vitae proin</span></li>
+                        <li class="flex items-center"><i class="bi bi-check text-green-500"></i> <span class="ml-2">Nec
+                                feugiat nisl pretium</span></li>
+                        <li class="flex items-center"><i class="bi bi-check text-green-500"></i> <span
+                                class="ml-2">Nulla at volutpat diam uteera</span></li>
+                        <li class="flex items-center"><i class="bi bi-check text-green-500"></i> <span
+                                class="ml-2">Pharetra massa massa ultricies</span></li>
+                        <li class="flex items-center"><i class="bi bi-check text-green-500"></i> <span
+                                class="ml-2">Massa ultricies mi quis hendrerit</span></li>
+                        <li class="flex items-center"><i class="bi bi-check text-green-500"></i> <span
+                                class="ml-2">Voluptate id voluptas qui sed aperiam rerum</span></li>
+                        <li class="flex items-center"><i class="bi bi-check text-green-500"></i> <span class="ml-2">Iure
+                                nihil dolores recusandae </span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="faq" class="faq-section mt-10 py-12 bg-gray-100 overflow-x-hidden">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+
+                <div class="w-full md:w-1/2 lg:w-2/3">
+                    <h3 class="text-2xl  text-bg mb-6">
+                        Frequently Asked <strong class="text-bg">Questions</strong>
+                    </h3>
+                    <div class="space-y-4">
+
+                        <div class="border border-gray-200 rounded-lg">
+                            <button
+                                class="w-full text-left px-4 py-3 font-medium text-bg rounded-lg bg-white hover:bg-gray-200"
+                                onclick="toggleAccordion('faq1')">
+                                Accordion Item #1
+                            </button>
+                            <div id="faq1" class="hidden px-4 py-2 text-gray-600">
+                                <strong>This is the first item's accordion body.</strong> It is hidden by default, and
+                                shown when you click
+                                on the button.
+                            </div>
+                        </div>
+
+
+                        <div class="border border-gray-200 rounded-lg">
+                            <button
+                                class="w-full text-left px-4 py-3 font-medium text-bg rounded-lg bg-white hover:bg-gray-200 focus:outline-none"
+                                onclick="toggleAccordion('faq2')">
+                                Accordion Item #2
+                            </button>
+                            <div id="faq2" class="hidden px-4 py-2 text-gray-600">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default, and
+                                shown when you
+                                click on the button.
+                            </div>
+                        </div>
+
+
+                        <div class="border border-gray-200 rounded-lg">
+                            <button
+                                class="w-full text-left px-4 py-3 font-medium  text-bg rounded-lg bg-white hover:bg-gray-200 focus:outline-none"
+                                onclick="toggleAccordion('faq3')">
+                                Accordion Item #3
+                            </button>
+                            <div id="faq3" class="hidden px-4 py-2 text-gray-600">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, and
+                                shown when you
+                                click on the button.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="w-full md:w-1/2 lg:w-1/3">
+                    <img src="images/faq.png" alt="FAQ Illustration" class="w-full rounded-lg shadow-md">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact-section  py-12 px-8 bg-gray-100 overflow-hidden">
+        <div class="container mx-auto sm:ml-16 pl-6 sm:pl-0 mb-12">
+            <h2 class="text-2xl text-gray-500 mb-2">Contact</h2>
+            <div class="text-3xl font-semibold text-bg">Check our contacts</div>
+        </div>
+
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-12 gap-8">
+
+
+                <div class="col-span-1 md:col-span-4 md:col-start-2">
+                    <div class="info-item flex mb-6 mt-6">
+                        <div class="icon text-2xl text-primary mr-4"> <i class="bi bi-geo-alt"></i> </div>
+                        <div>
+                            <h3 class="text-lg font-semibold">Address</h3>
+                            <p class="text-gray-600">A108 Adam Street, New York, NY 535022</p>
+                        </div>
+                    </div>
+                    <div class="info-item flex mb-6">
+                        <div class="icon text-2xl text-primary mr-4"> <i class="bi bi-telephone"></i> </div>
+                        <div>
+                            <h3 class="text-lg font-semibold">Call Us</h3>
+                            <p class="text-gray-600">+1 5589 55488 55</p>
+                        </div>
+                    </div>
+                    <div class="info-item flex mb-6">
+                        <div class="icon text-2xl text-primary mr-4"> <i class="bi bi-envelope"></i> </div>
+                        <div>
+                            <h3 class="text-lg font-semibold">Email Us</h3>
+                            <p class="text-gray-600">info@example.com</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-span-1 md:col-span-5 md:col-start-7">
+                    <form action="forms/contact.php" method="post" class="space-y-6" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <input type="text" name="name"
+                                    class="w-full p-3 border border-gray-300 rounded-md outline-primary"
+                                    placeholder="Your Name" required="">
+                            </div>
+                            <div>
+                                <input type="email" name="email"
+                                    class="w-full p-3 border border-gray-300 rounded-md outline-primary"
+                                    placeholder="Your Email" required="">
+                            </div>
+                        </div>
+                        <div>
+                            <input type="text" name="subject"
+                                class="w-full p-3 border border-gray-300 rounded-md outline-primary"
+                                placeholder="Subject" required="">
+                        </div>
+                        <div>
+                            <textarea name="message" rows="6"
+                                class="w-full p-3 border border-gray-300 rounded-md outline-primary"
+                                placeholder="Message" required=""></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit"
+                                class="px-8 py-3 bg-primary hover:bg-hover text-white font-semibold rounded-md  ">Send
+                                Message</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="footer pt-12 pb-4 bg-bg overflow-x-hidden">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <div class="footer-about">
+                    <span class="sitename text-2xl font-semibold text-white">Bootslander</span>
+                    <div class="footer-contact pt-3 text-gray-300">
+                        <p>A108 Adam Street</p>
+                        <p>New York, NY 535022</p>
+                        <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+                        <p><strong>Email:</strong> <span>info@example.com</span></p>
+                    </div>
+                    <div class="social-links d-flex mt-4 space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-hover"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-hover"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-hover"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-hover"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="footer-links">
+                    <h4 class="text-xl font-semibold text-white">Useful Links</h4>
+                    <ul class="space-y-1 mt-3">
+                        <li><a href="#" class="text-gray-300 hover:text-hover">Home</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-hover">About us</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-hover">Services</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-hover">Terms of service</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-hover">Privacy policy</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer-links">
+                    <h4 class="text-xl font-semibold text-white">Our Services</h4>
+                    <ul class="space-y-1 mt-3">
+                        <li><a href="#" class="text-gray-300 hover:text-hover">Web Design</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-hover">Web Development</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-hover">Product Management</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-hover">Marketing</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-hover">Graphic Design</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer-newsletter">
+                    <h4 class="text-xl font-semibold text-white">Our Newsletter</h4>
+                    <p class="mt-3 text-gray-300">Subscribe to our newsletter and receive the latest news about our
+                        products and services!</p>
+                    <form action="forms/newsletter.php" method="post" class="php-email-form mt-4">
+                        <div class="flex flex-wrap space-x-2">
+                            <input type="email" name="email"
+                                class="p-2 border rounded-lg text-gray-700 outline-none flex-1 min-w-0"
+                                placeholder="Your email">
+                            <input type="submit" value="Subscribe"
+                                class="bg-primary text-white p-2 rounded-lg hover:bg-hover min-w-[80px] mt-2 sm:mt-0">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 text-center mt-8">
+            <p class="text-white">© <span>Copyright</span> <strong class="px-1 cursor-pointer">Bootslander</strong>
+                <span>All Rights Reserved</span>
+            </p>
+            <div class="credits mt-2 text-white">
+                Designed by <span class="font-semibold text-primary cursor-pointer">XYZ</span>
+            </div>
+        </div>
+    </footer>
+    <div id="scrollToTop"
+        class="fixed bottom-5 right-5 w-10 h-10 bg-primary text-white flex items-center justify-center rounded shadow-lg cursor-pointer transition-opacity duration-300 transform translate-y-0 z-50 opacity-0 invisible">
+        <i class="bi bi-arrow-up"></i>
+    </div>
+    <script>
+
+        const menuButton = document.getElementById('menuButton');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+
+        menuButton.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('hidden');
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!dropdownMenu.contains(event.target) && !menuButton.contains(event.target)) {
+                dropdownMenu.classList.add('hidden');
+            }
+        });
+    </script>
+    <script>
+        function animateCounter(element, targetValue) {
+            let currentValue = 0;
+            const interval = setInterval(() => {
+                element.textContent = currentValue;
+                if (currentValue >= targetValue) {
+                    clearInterval(interval);
+                } else {
+                    currentValue++;
+                }
+            }, 10);
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const counters = document.querySelectorAll('.stats-item span');
+            counters.forEach(counter => {
+                const targetValue = parseInt(counter.textContent, 10);
+                animateCounter(counter, targetValue);
+            });
+        });
+    </script>
+    <script>
+        const scrollToTopButton = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                scrollToTopButton.classList.add('opacity-100', 'visible', 'translate-y-0');
+                scrollToTopButton.classList.remove('opacity-0', 'invisible');
+            } else {
+                scrollToTopButton.classList.add('opacity-0', 'invisible');
+                scrollToTopButton.classList.remove('opacity-100', 'visible', 'translate-y-0');
+            }
+        });
+
+        scrollToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const animatedElements = document.querySelectorAll('.fade-up, .card-animate, .features-animation, .stats-animation');
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            animatedElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+    <script>
+        function toggleAccordion(id) {
+            const element = document.getElementById(id);
+            element.classList.toggle("hidden");
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            direction: 'horizontal',
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination', clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev',
+
+            }, speed: 800,
+        });
+    </script>
+</body>
+</html>
